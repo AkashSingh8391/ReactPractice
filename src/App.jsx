@@ -1,11 +1,16 @@
 import Header from "./header";
+import Login,{Profile,Setting} from "./UserComponent"
 
 function App(){
   return (
     <div>
       <Header/>
       
+    <Profile/>
+    <Setting/>
+
     <h1>Hello ! Gurjar Akash Singh Virana...</h1>
+    <Login/>
 
     <Apple/>
     <Color/>

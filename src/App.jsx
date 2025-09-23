@@ -2,6 +2,8 @@ import Header from "./header";
 import Login,{Profile,Setting} from "./UserComponent"
 
 function App(){
+const name="Akash";
+
   return (
     <div>
       <Header/>
@@ -9,7 +11,7 @@ function App(){
     <Profile/>
     <Setting/>
 
-    <h1>Hello ! Gurjar Akash Singh Virana...</h1>
+    <h1>Hello ! Gurjar {name} Singh Virana...</h1>
     <Login/>
 
     <Apple/>

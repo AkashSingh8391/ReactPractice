@@ -1,5 +1,5 @@
 import Header from "./header";
-import Login,{Profile,Setting} from "./UserComponent"
+import Login,{Profile,Setting,Button} from "./UserComponent"
 
 function App(){
 const name="Akash";
@@ -13,6 +13,7 @@ const name="Akash";
 
     <h1>Hello ! Gurjar {name} Singh Virana...</h1>
     <Login/>
+    <Button/>
 
     <Apple/>
     <Color/>

@@ -1,5 +1,6 @@
 function Login(){
     return (
+        
         <div>
             <h1>Login</h1>
         </div>
@@ -22,6 +23,12 @@ export function Setting()
         <div>
             <h3>setting</h3>
         </div>
+    )
+}
+
+export function Button(){
+    return(
+        <button onClick={()=>alert("Hello")}>click me !</button>
     )
 }
 

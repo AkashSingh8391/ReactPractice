@@ -13,8 +13,7 @@ const name="Akash";
 
     <h1>Hello ! Gurjar {name} Singh Virana...</h1>
     <Login/>
-    <Button/>
-
+    
     <Apple/>
     <Color/>
     </div>
@@ -35,5 +34,6 @@ function Color(){
     <h2>color is red.</h2>
   )
 }
+
 
 export default App;

@@ -1,5 +1,6 @@
 import Header from "./header";
 import Login,{Profile,Setting,Button} from "./UserComponent"
+import ToDo from "./ToDo";
 
 function App(){
 const name="Akash";
@@ -10,7 +11,7 @@ const name="Akash";
       
     <Profile/>
     <Setting/>
-
+    <ToDo></ToDo>
     <h1>Hello ! Gurjar {name} Singh Virana...</h1>
     <Login/>
     <Button/>

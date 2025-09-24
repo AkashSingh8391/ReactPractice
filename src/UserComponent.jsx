@@ -3,7 +3,7 @@ function Login(){
         
         <div>
             <h1>Login</h1>
-            <Button/>
+            
         </div>
     )
 }
@@ -27,7 +27,7 @@ export function Setting()
     )
 }
 
-function Button(){
+export function Button(){
     return(
         <button onClick={()=>alert("Hello")}>click me !</button>
     )

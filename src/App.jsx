@@ -3,18 +3,21 @@ import Login,{Profile,Setting,Button} from "./UserComponent"
 import Operation from "./ToDo";
 import Akash from "./Akash";
 
+import { Event } from "./Akash";
+
 function App(){
 const name="Akash";
 
+
+
   return (
     <div>
-      <Akash></Akash>
+      <Event/>
     </div>
   )
 }
 
 
-
-
-
 export default App;
+
+

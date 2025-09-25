@@ -1,40 +1,20 @@
 import Header from "./header";
 import Login,{Profile,Setting,Button} from "./UserComponent"
-import ToDo from "./ToDo";
+import Operation from "./ToDo";
+import Akash from "./Akash";
 
 function App(){
 const name="Akash";
 
   return (
     <div>
-      <Header/>
-      
-    <Profile/>
-    <Setting/>
-    <ToDo></ToDo>
-    <h1>Hello ! Gurjar {name} Singh Virana...</h1>
-    <Login/>
-    <Button/>
-    <Apple/>
-    <Color/>
+      <Akash></Akash>
     </div>
   )
 }
 
 
-function Apple(){
-  return (
 
-<h2>New function add via component</h2>
-
-  )
-}
-
-function Color(){
-  return (
-    <h2>color is red.</h2>
-  )
-}
 
 
 export default App;

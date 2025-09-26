@@ -1,37 +1,15 @@
-function Login(){
+import { useState } from "react";
+
+
+
+const Counter = () => {
+    const [count, setCount] = useState(0)
     return (
-        
         <div>
-            <h1>Login</h1>
-            
+            <h1>Counter:{count}</h1>
+            <button onClick={() => setCount(count + 1)}>Update Button</button>
         </div>
     )
 }
 
-
-export function Profile()
-{
-    return (
-        <div>
-            <h3>profile</h3>
-        </div>
-    )
-}
-
-export function Setting()
-{
-    return (
-        <div>
-            <h3>setting</h3>
-        </div>
-    )
-}
-
-export function Button(){
-    return(
-        <button onClick={()=>alert("Hello")}>click me !</button>
-    )
-}
-
-
-export default Login;
+export default Counter

@@ -4,13 +4,22 @@ import Operation from "./ToDo";
 import Akash from "./Akash";
 
 import { Event } from "./Akash";
+import { useState } from "react";
 
 function App(){
-  return (
-    <div>
+  
+    const [display,setDisplay]=useState(true)
+    return(
     
-        <Counter/>
-    </div>
+      <>
+
+        <h1>Toggle in react!</h1>
+        <button onClick={()=> setDisplay(!display)}>Toggle</button>
+
+        {
+          display? <Counter/>:null
+        }
+    </>
   )
 }
 

@@ -5,6 +5,7 @@ import Akash from "./Akash";
 import HideShow from "./HideShow";
 import { Event } from "./Akash";
 import { useState } from "react";
+import PasswordInput from "./PasswordShow";
 
 function App(){
   
@@ -13,6 +14,8 @@ function App(){
     
       <>
         <HideShow/>
+
+        <PasswordInput/>
         <h1>Toggle in react!</h1>
         <button onClick={()=> setDisplay(!display)}>Toggle</button>
 

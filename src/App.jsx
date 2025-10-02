@@ -6,6 +6,7 @@ import HideShow from "./HideShow";
 import { Event } from "./Akash";
 import { useState } from "react";
 import PasswordInput from "./PasswordShow";
+import { Example } from "./HideShow";
 
 function App(){
   
@@ -14,14 +15,19 @@ function App(){
     
       <>
         <HideShow/>
-
+         <Example score={75} />
+        
         <PasswordInput/>
         <h1>Toggle in react!</h1>
         <button onClick={()=> setDisplay(!display)}>Toggle</button>
 
         {
-          display? <Counter/>:null
+         
+         display? <Counter/>:null
+        
+        
         }
+
     </>
   )
 }

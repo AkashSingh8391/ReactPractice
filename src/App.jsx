@@ -7,26 +7,21 @@ import { Event } from "./Akash";
 import { useState } from "react";
 import PasswordInput from "./PasswordShow";
 import { Example } from "./HideShow";
+import User from "./property";
 
 function App(){
-  
-    const [display,setDisplay]=useState(true)
+    let userName="Akash Singh";
+    let age=23;
+    let email="akash@gmail.com";
+
+
+    
     return(
     
       <>
-        <HideShow/>
-         <Example score={75} />
-        
-        <PasswordInput/>
-        <h1>Toggle in react!</h1>
-        <button onClick={()=> setDisplay(!display)}>Toggle</button>
-
-        {
-         
-         display? <Counter/>:null
-        
-        
-        }
+        <User name={userName} age={age} email={email}/>
+        <h1>Props in react!!!</h1>
+        <User name={"Akash Singh Gurjar"}/>
 
     </>
   )

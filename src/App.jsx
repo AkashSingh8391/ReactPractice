@@ -1,33 +1,20 @@
-import Header from "./header";
-import Counter from "./UserComponent";
-import Operation from "./ToDo";
-import Akash from "./Akash";
-import HideShow from "./HideShow";
-import { Event } from "./Akash";
-import { useState } from "react";
-import PasswordInput from "./PasswordShow";
-import { Example } from "./HideShow";
 import User from "./property";
 
-function App(){
-    let userName="Akash Singh";
-    let age=23;
-    let email="akash@gmail.com";
+function App() {
+  // ek object banate hain
+  const user = {
+    name: "Akash Singh",
+    age: 23,
+    email: "akash@gmail.com",
+  };
 
-
-    
-    return(
-    
-      <>
-        <User name={userName} age={age} email={email}/>
-        <h1>Props in react!!!</h1>
-        <User name={"Akash Singh Gurjar"}/>
-
-    </>
-  )
+  return (
+    <div>
+      <h1>Passing Object as Props</h1>
+      {/* Passing entire object */}
+      <User data={user} />
+    </div>
+  );
 }
 
-
 export default App;
-
-

@@ -1,15 +1,12 @@
-
-
-function User({name, age, email}){
-
-    return ( 
-        <div>
-        <h1>User Component !</h1>
-        <h2>name : {name}</h2>
-        <h2>age : {age}</h2>
-        <h2>email : {email}</h2>
-        </div>
-    )
+function User(props) {
+  return (
+    <div style={{ border: "2px solid gray", padding: "10px", marginTop: "10px" }}>
+      <h2>User Information</h2>
+      <p><b>Name:</b> {props.data.name}</p>
+      <p><b>Age:</b> {props.data.age}</p>
+      <p><b>Email:</b> {props.data.email}</p>
+    </div>
+  );
 }
 
 export default User;

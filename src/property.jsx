@@ -1,12 +1,18 @@
-function User(props) {
+function User({ name, age, email }) {
   return (
-    <div style={{ border: "2px solid gray", padding: "10px", marginTop: "10px" }}>
-      <h2>User Information</h2>
-      <p><b>Name:</b> {props.data.name}</p>
-      <p><b>Age:</b> {props.data.age}</p>
-      <p><b>Email:</b> {props.data.email}</p>
+    <div>
+      <h2>Name: {name}</h2>
+      <h3>Age: {age}</h3>
+      <h4>Email: {email}</h4>
     </div>
   );
 }
+
+// 🔹 Default props set kar rahe hain
+User.defaultProps = {
+  name: "Guest User",
+  age: "Not Specified",
+  email: "No Email Provided",
+};
 
 export default User;

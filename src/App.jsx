@@ -1,18 +1,19 @@
 import User from "./property";
 
 function App() {
-  // ek object banate hain
-  const user = {
-    name: "Akash Singh",
-    age: 23,
-    email: "akash@gmail.com",
-  };
-
   return (
-    <div>
-      <h1>Passing Object as Props</h1>
-      {/* Passing entire object */}
-      <User data={user} />
+    <div style={ { backgroundcolor:"light-blue" ,color: "orange",
+        padding: "10px 20px",
+        border: "none",
+        borderRadius: "8px",
+        cursor: "pointer",}}>
+      <h1>Default Props Example</h1>
+
+      {/* Props diye hue */}
+      <User name="Akash Singh" age={23} email="akash@gmail.com" />
+
+      {/* Props nahi diye hue → Default props use honge */}
+      <User />
     </div>
   );
 }

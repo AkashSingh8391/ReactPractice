@@ -1,19 +1,14 @@
-import User from "./property";
+import Button from "./Card";
 
 function App() {
   return (
-    <div style={ { backgroundcolor:"light-blue" ,color: "orange",
-        padding: "10px 20px",
-        border: "none",
-        borderRadius: "8px",
-        cursor: "pointer",}}>
-      <h1>Default Props Example</h1>
+    <div style={{ padding: "20px" }}>
+      <h1>Change Style with Props 🎨</h1>
 
-      {/* Props diye hue */}
-      <User name="Akash Singh" age={23} email="akash@gmail.com" />
-
-      {/* Props nahi diye hue → Default props use honge */}
-      <User />
+      {/* Passing different colors as props */}
+      <Button label="Primary" color="blue" />
+      <Button label="Success" color="green" />
+      <Button label="Danger" color="red" />
     </div>
   );
 }

@@ -1,8 +1,8 @@
-function Button({ label, color }) {
+function Button({ label, propscolor }) {
   return (
     <button
       style={{
-        backgroundColor: color,
+        backgroundColor: propscolor,
         color: "white",
         padding: "10px 20px",
         border: "none",

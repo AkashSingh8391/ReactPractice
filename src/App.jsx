@@ -1,4 +1,5 @@
 import { useState } from "react";
+import ControlledInput from "./controlledComponent/ControlledInput";
 
 function App() {
   // Step 1️⃣: State banana
@@ -24,6 +25,9 @@ function App() {
 
       {/* Step 4️⃣: Display value */}
       <h3>Your Name: {name}</h3>
+
+    <ControlledInput/>
+
     </div>
   );
 }

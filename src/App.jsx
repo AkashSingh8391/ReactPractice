@@ -1,4 +1,5 @@
 import { useState } from "react";
+import ControlledForm from "./controlledComponent/ControlledForm";
 
 function ControlledInput() {
   const [name, setName] = useState("");
@@ -21,7 +22,9 @@ function ControlledInput() {
         onChange={handleChange} // User ke type karte hi state update hoti hai
       />
       <button type="submit">Submit</button>
+          <ControlledForm/>
     </form>
+
   );
 }
 

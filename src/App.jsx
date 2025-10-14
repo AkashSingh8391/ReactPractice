@@ -1,5 +1,6 @@
 import { useState } from "react";
 import ControlledForm from "./controlledComponent/ControlledForm";
+import CheckboxExample from "./controlledComponent/CheckBoxExample";
 
 function ControlledInput() {
   const [name, setName] = useState("");
@@ -15,14 +16,7 @@ function ControlledInput() {
 
   return (
     <form onSubmit={handleSubmit}>
-      <label>Enter your name: </label>
-      <input
-        type="text"
-        value={name}           // Input ka value state se control ho raha hai
-        onChange={handleChange} // User ke type karte hi state update hoti hai
-      />
-      <button type="submit">Submit</button>
-          <ControlledForm/>
+      <CheckboxExample/>
     </form>
 
   );

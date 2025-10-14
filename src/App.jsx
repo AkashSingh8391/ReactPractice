@@ -1,35 +1,28 @@
 import { useState } from "react";
-import ControlledInput from "./controlledComponent/ControlledInput";
 
-function App() {
-  // Step 1️⃣: State banana
+function ControlledInput() {
   const [name, setName] = useState("");
 
-  // Step 2️⃣: Function to handle input
-  function handleChange(event) {
-    setName(event.target.value);
-  }
+  const handleChange = (event) => {
+    setName(event.target.value); // React state update ho rahi hai
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    alert("Your name is: " + name);
+  };
 
   return (
-    <div style={{ padding: "20px" }}>
-      <h2>Get Input Field Value 🎯</h2>
-
-      {/* Step 3️⃣: Input field */}
+    <form onSubmit={handleSubmit}>
+      <label>Enter your name: </label>
       <input
         type="text"
-        placeholder="Enter your name"
-        value={name}
-        onChange={handleChange}
-        style={{ padding: "8px", borderRadius: "5px" }}
+        value={name}           // Input ka value state se control ho raha hai
+        onChange={handleChange} // User ke type karte hi state update hoti hai
       />
-
-      {/* Step 4️⃣: Display value */}
-      <h3>Your Name: {name}</h3>
-
-    <ControlledInput/>
-
-    </div>
+      <button type="submit">Submit</button>
+    </form>
   );
 }
 
-export default App;
+export default ControlledInput;

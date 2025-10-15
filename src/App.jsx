@@ -1,6 +1,7 @@
 import { useState } from "react";
 import ControlledForm from "./controlledComponent/ControlledForm";
 import CheckboxExample from "./controlledComponent/CheckBoxExample";
+import RadioButtonExample from "./controlledComponent/RadioButton";
 
 function ControlledInput() {
   const [name, setName] = useState("");
@@ -16,7 +17,7 @@ function ControlledInput() {
 
   return (
     <form onSubmit={handleSubmit}>
-      <CheckboxExample/>
+      <RadioButtonExample/>
     </form>
 
   );

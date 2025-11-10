@@ -2,6 +2,7 @@ import { useState } from "react";
 import ControlledForm from "./controlledComponent/ControlledForm";
 import CheckboxExample from "./controlledComponent/CheckBoxExample";
 import RadioButtonExample from "./controlledComponent/RadioButton";
+import Clock from "./controlledComponent/Clock";
 
 function ControlledInput() {
   const [name, setName] = useState("");
@@ -18,6 +19,7 @@ function ControlledInput() {
   return (
     <form onSubmit={handleSubmit}>
       <RadioButtonExample/>
+      <Clock/>
     </form>
 
   );

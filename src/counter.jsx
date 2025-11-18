@@ -4,8 +4,8 @@ function Counter() {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
-    console.log("useEffect called every render");
-  });
+  console.log("Component mounted - only once");
+}, []);
 
   return (
     <div>

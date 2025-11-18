@@ -3,6 +3,7 @@ import ControlledForm from "./controlledComponent/ControlledForm";
 import CheckboxExample from "./controlledComponent/CheckBoxExample";
 import RadioButtonExample from "./controlledComponent/RadioButton";
 import Clock from "./controlledComponent/Clock";
+import Counter from "./counter";
 
 function ControlledInput() {
   const [name, setName] = useState("");
@@ -18,6 +19,8 @@ function ControlledInput() {
 
   return (
     <form onSubmit={handleSubmit}>
+
+      <Counter/>
       <RadioButtonExample/>
       <Clock/>
     </form>
